@@ -123,10 +123,10 @@ function collision(x1,y1,r1,x2,y2,r2){
 function animate(){
     if(playing){
     requestAnimationFrame(animate);
-    ctx.clearRect(0,0,width,height);
-    //ctx.fillStyle='rgba(0,0,0,0.1';
-    //ctx.fillRect(0,0,width,height);
-    //ctx.fill();
+    //ctx.clearRect(0,0,width,height);
+    ctx.fillStyle='rgba(0,0,0,0.1';
+    ctx.fillRect(0,0,width,height);
+    ctx.fill();
     enemies.forEach((enemy,e)=>{
         bullets.forEach((bullet,b) => {
 
